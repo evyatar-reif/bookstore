@@ -8,16 +8,19 @@ import HomePage from "./pages/HomePage/HomePage";
 import FavoritePage from "./pages/FavoritesPage/FavoritePage";
 import CartPage from "./pages/CartPage/CartPage";
 import UserPage from "./pages/UserPage/UserPage";
+import SearchPage from "./pages/SearchPage/SearchPage";
 
 function App() {
-  const [openDropdown, setOpenDropdown] = useState(true);
+  const [openDropdown, setOpenDropdown] = useState(false);
   return (
     <div className='App'>
       <Header
         openDropdown={openDropdown}
         setOpenDropdown={setOpenDropdown}
       />
-      <main onClick={() => setOpenDropdown(false)}>
+      <main
+        className='app-main'
+        onClick={() => setOpenDropdown(false)}>
         <Routes>
           <Route
             path='/'
@@ -34,6 +37,10 @@ function App() {
           <Route
             path='/user'
             element={<UserPage />}
+          />
+          <Route
+            path='/search/:type/:entry'
+            element={<SearchPage />}
           />
         </Routes>
       </main>

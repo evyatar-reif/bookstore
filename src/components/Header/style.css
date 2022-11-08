@@ -10,17 +10,7 @@
 .header-con >*{
     max-height: 70px;
 }
-.type-con > span{
-    font-family: 'Cairo', sans-serif;
-    color: #6C5DD3;
-}
-.type-con{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:5px;
-    cursor:pointer;
-}
+
 .searchbar-con{
     height: 50px;
     border: 1px solid #E1E1E1;

@@ -4,14 +4,15 @@
     justify-content: space-between;
     align-items:center;
     gap:25px;
-    width: 130px;
+    width: 150px;
     position:relative;
 }
 .select{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    gap:15px;
+    padding:10px;
     cursor: pointer;
     font-family: 'Cairo', sans-serif;
     color: #6C5DD3;

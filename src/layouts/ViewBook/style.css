@@ -1,0 +1,165 @@
+.main-con{
+    flex-direction: column;
+    width:1500px;
+    display: flex;
+  
+}
+
+.book-info-con{
+    display:flex;
+    font-family: 'Cairo', sans-serif;
+}
+.book-info-con>img{
+    height: 600px;
+    width:400px;
+    border-radius: 20px;
+    border:1px solid #AAAAAA;
+}
+.book-content{
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+}
+.book-content>span{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+}
+
+.share-bar{
+    display:flex;
+    /* border: 1px solid black; */
+    justify-content: left;
+    gap:15px;
+}
+.btn-facebook{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    height:30px;
+    width:130px;
+    background-color:#1E33E5;
+    border:none;
+    border-radius: 12px;
+    color:white;
+    cursor:pointer;
+}
+.btn-twitter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    height:30px;
+    width:130px;
+    background-color:#61C3E2;
+    border:none;
+    border-radius: 12px;
+    color:white;
+    cursor:pointer;
+}
+.btn-whatsapp{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    height:30px;
+    width:130px;
+    background-color:#53C258;
+    border:none;
+    border-radius: 12px;
+    color:white;
+    cursor:pointer;
+}
+.btn-email{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    height:30px;
+    width:130px;
+    background-color:#AAAAAA;
+    border:none;
+    border-radius: 12px;
+    color:white;
+    cursor:pointer;
+}
+
+.description{
+    text-align: justify;
+    font-size:17px;
+}
+
+.middle-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features{
+    display:flex;
+    gap:30px;
+}
+.fact-bar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:50px;    
+}
+.free-shipping{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width:200px;
+    background-color: #EBE8FE;
+    color:#6C5DD3;
+    font-weight: bold;
+    gap:10px;
+    border-radius: 15px;
+}
+.in-stock{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width:180px;
+    background-color: #DDF5E4;
+    color:#3EB760;
+    font-weight: bold;
+    gap:10px;
+    border-radius: 15px;
+}
+.line-break{
+    width:100%;
+}
+.bottom-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-container{
+    display:flex;
+    gap:15px;
+    align-items: center;
+    
+}
+.price-container>span:nth-child(1){
+    font-weight: bold;
+    font-size: 35px;
+}
+.price-container>span:nth-child(2){
+    font-weight: lighter;
+    font-size: 25px;
+    text-decoration: line-through;
+}
+.discount{
+    text-align: center;
+    background-color: #FF754C;
+    color:white;
+    width: 30px;
+    border-radius: 10px;
+}
+.actions-container{
+    display:flex;
+    gap:30px;
+}
