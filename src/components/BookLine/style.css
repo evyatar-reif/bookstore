@@ -1,0 +1,120 @@
+.book-con{
+    display:flex;
+    width:900px;
+    border: 1px solid #F0F0F0;
+    border-radius: 15px;
+    font-family: 'Cairo', sans-serif;
+    padding:15px;
+}
+
+.cover{
+    height:320px;
+    width:230px;
+    border-radius: 20px;
+}
+
+.book-content{
+    display:flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.book-top{
+    display:flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.categories{
+    font-size: 18px;
+    text-align: left;
+    color:#6C5DD3;
+}
+.book-content >p{
+    text-align: left;
+    font-size: 15px;
+}
+.price-con{
+    display: flex;
+    gap:15px;
+    font-size: 21px;
+    justify-content: left;
+    align-items: center;
+}
+.price-con >span:nth-child(1){
+    font-weight: 700;
+}
+.price-con >span:nth-child(2){
+    font-weight: 300;
+    font-size:18px;
+    text-decoration: line-through;
+}
+.book-bottom{
+    display:flex;
+    justify-content: space-between;
+}
+.book-fact{
+    display:flex;
+    flex-direction: column;
+}
+.book-fact>span:nth-child(1){
+    font-weight: 300;
+    text-align: left;
+    font-size:13px;
+}
+.book-fact>span:nth-child(2){
+    font-weight:500;
+    text-align: left;
+    font-size:16px;
+}
+
+.book-actions{
+    display: flex;
+    gap: 15px;
+}
+.btn-add{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:15px;
+
+    height:50px;
+    width:220px;
+    background-color: #6C5DD3;
+    border-radius: 15px;
+    cursor: pointer;
+    color:white;
+}
+.btn-add:hover{
+    scale:1.05;
+}
+.btn-favorite{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    height:50px;
+    width:50px;
+    background-color: #6C5DD3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-favorite:hover{
+    scale:1.05;
+}
+.btn-not-favorite{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    height:50px;
+    width:50px;
+    background-color: #F0F0F0;
+    border: 1px solid #E1E1E1;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-not-favorite:hover{
+    scale:1.05;
+}

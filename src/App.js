@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header/Header";
+import HomePage from "./pages/HomePage/HomePage";
+import FavoritePage from "./pages/FavoritesPage/FavoritePage";
+import CartPage from "./pages/CartPage/CartPage";
+import UserPage from "./pages/UserPage/UserPage";
 
 function App() {
+  const [openDropdown, setOpenDropdown] = useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header
+        openDropdown={openDropdown}
+        setOpenDropdown={setOpenDropdown}
+      />
+      <main onClick={() => setOpenDropdown(false)}>
+        <Routes>
+          <Route
+            path='/'
+            element={<HomePage />}
+          />
+          <Route
+            path='/favorite'
+            element={<FavoritePage />}
+          />
+          <Route
+            path='/cart'
+            element={<CartPage />}
+          />
+          <Route
+            path='/user'
+            element={<UserPage />}
+          />
+        </Routes>
+      </main>
     </div>
   );
 }
